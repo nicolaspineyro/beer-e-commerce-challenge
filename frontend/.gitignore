@@ -1,14 +1,3 @@
-# Logs
-logs
-*.log
-
-# dependencies
 /node_modules
-
-# Build
-dist
-dist-ssr
-
-# local development and build files
-*.local
+/dist
 .env
