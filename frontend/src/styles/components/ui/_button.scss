@@ -1,0 +1,35 @@
+@import "../../abstracts/colors";
+@import "../../abstracts/typography";
+
+.button {
+  font-size: $regular;
+  padding: 10px 20px;
+  width: 100%;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  cursor: pointer;
+
+  &.button-disabled {
+    background-color: gray;
+    color: lightgray;
+    cursor: not-allowed;
+  }
+
+  @media (min-width: 768px) {
+    &:hover {
+      background-color: $Navajo_White;
+      color: white;
+    }
+  }
+}
+
+.button-primary {
+  background-color: $Sunshade;
+  color: white;
+}
+
+.button-secondary {
+  background-color: white;
+  color: $Dark;
+}

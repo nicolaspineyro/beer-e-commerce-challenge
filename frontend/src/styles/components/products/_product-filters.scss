@@ -1,0 +1,36 @@
+@import "../../abstracts/colors";
+
+.filters-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px
+}
+
+.filters-header {
+  display: flex;
+  flex-direction: row;
+  color: $DarkLight;
+  justify-content: space-between;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 16px;
+}
+
+.category-icon {
+  height: 25px;
+  width: 25px;
+  margin-right: 5px;
+}
+
+.category-container {
+  display: flex;
+  align-items: center;
+}
+
+.category-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

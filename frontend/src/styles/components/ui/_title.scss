@@ -1,0 +1,15 @@
+@import "../../abstracts/typography";
+
+.title {
+    color: $textPrimary;
+    font-size: $extraLarge;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.section-title {
+    color: $textPrimary;
+    font-size: $medium;
+    letter-spacing: .4px;
+    font-weight: 600;
+}

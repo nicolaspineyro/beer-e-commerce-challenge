@@ -1,0 +1,49 @@
+@import "../../abstracts/colors";
+
+.plus-button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+
+  border-radius: 8px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 12px;
+  height: 100%;
+
+  .brand-text {
+    margin-top: 10px;
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  img {
+    object-fit: contain;
+    height: 200px;
+  }
+
+  .price-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+  }
+
+  @media (max-width: 768px) {
+    img {
+      height: 120px;
+    }
+  }
+}

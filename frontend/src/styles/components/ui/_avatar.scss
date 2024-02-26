@@ -1,0 +1,23 @@
+.circular,
+.square {
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(var(--avatar-size) / 2);
+  color: white;
+  border-radius: 50%;
+}
+
+.square {
+  border-radius: 10px;
+}
+
+.circular img,
+.square img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+}

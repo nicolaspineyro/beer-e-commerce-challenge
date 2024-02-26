@@ -1,0 +1,51 @@
+@import "../abstracts/colors";
+
+.root-layout-container {
+  background-color: $layoutBackground;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: 768px) {
+    main {
+      padding: 2rem 10vw;
+      flex: 1;
+    }
+
+    header {
+      padding: 0 10vw;
+    }
+  }
+
+  @media (max-width: 768px) {
+    main {
+      padding-bottom: 100px;
+    }
+  }
+}
+
+.secondary-layout-container {
+  background-color: $layoutBackground;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: 768px) {
+    main {
+      padding: 2rem 10vw 0;
+      flex: 1;
+    }
+
+    header {
+      padding: 0 10vw;
+    }
+  }
+}

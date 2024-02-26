@@ -1,0 +1,13 @@
+@import "../../abstracts/typography";
+
+
+.section-header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.see-all-button {
+    color: $textSecondary;
+    font-size: $small;
+}
+

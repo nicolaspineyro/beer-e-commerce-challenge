@@ -1,0 +1,9 @@
+.home-page-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title-caption {
+  color: $textSecondary;
+}
