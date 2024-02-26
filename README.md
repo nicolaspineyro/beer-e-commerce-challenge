@@ -11,24 +11,22 @@ In this challenge, i built a mockup for a E-Commerce App with a Home, Cart, Sett
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/beer-e-commerce-challenge.git
+   git clone https://github.com/nicolaspineyro/beer-e-commerce-challenge.git
 
-   Navigate to the Project Directory:
-
-2. Install dependencies for both frontend and backend:
+2. Navigate to the Project Directory and Install dependencies for both frontend and backend:
 
    ```bash
    cd frontend
-   npm install   # or yarn install
+   yarn install
    cd ../backend
-   npm install   # or yarn install
+   yarn install
 
 3. Run the project
    ```bash
    cd frontend
-   npm start # or yarn dev
+   yarn dev
    cd ../backend
-   npm start # or yarn dev
+   yarn dev
 
 4. Review the Port Configuration:
 
