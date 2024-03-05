@@ -4,8 +4,6 @@ import { HiBars3CenterLeft } from "react-icons/hi2";
 import NavBarItem from "components/ui/NavBars/RootNavBar/NavBarItem";
 import Avatar from "components/ui/Avatar";
 
-import { useLocation } from "react-router-dom";
-
 export const MENU_ITEMS = [
   { id: "menu-item-1", label: "Home", link: PATHS.HOME },
   { id: "menu-item-2", label: "Products", link: PATHS.PRODUCTS },
@@ -14,7 +12,6 @@ export const MENU_ITEMS = [
 ];
 
 const RootNavBar = () => {
-  const { pathname } = useLocation();
   return (
     <nav>
       <div className="icon-container">
@@ -23,7 +20,7 @@ const RootNavBar = () => {
 
       <ul className="menu-container">
         {MENU_ITEMS.map((item) => (
-          <NavBarItem key={item.id} currentPath={pathname} {...item} />
+          <NavBarItem key={item.id} {...item} />
         ))}
       </ul>
       <Avatar width={50} height={50} imageUrl="avatar.jpg" />

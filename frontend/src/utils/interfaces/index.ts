@@ -9,6 +9,7 @@ import SecondaryNavBarProps from "./SecondaryNavBarProps";
 import { ProductDetailsHeaderProps } from "./ProductDetailsHeaderProps";
 import ProductDescriptionProps from "./ProductDescriptionProps";
 import ProductVariantProps from "./ProductVariantsProps";
+import ProductCardProps from "./ProductCardProps";
 
 export type {
   AvatarProps,
@@ -23,4 +24,5 @@ export type {
   ProductDescriptionProps,
   TitleProps,
   SecondaryNavBarProps,
+  ProductCardProps,
 };

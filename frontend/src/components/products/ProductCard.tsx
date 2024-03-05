@@ -1,13 +1,13 @@
 import { useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 import useDataFetch from "src/utils/hooks/useDataFetch";
-import { IProduct } from "src/utils/interfaces";
+import { ProductCardProps } from "src/utils/interfaces";
 import { Button } from "components/ui";
 import { BsPlus } from "react-icons/bs";
 import { PATHS } from "routes/paths";
 import { formatBrandName, formatPrice } from "src/utils/formats";
 
-const ProductCard = ({ id, brand, image, skus }: IProduct) => {
+const ProductCard = ({ id, brand, image, skus }: ProductCardProps) => {
   const navigate = useNavigate();
   const { data: sku } = useDataFetch<{
     stock: number;
@@ -32,12 +32,21 @@ const ProductCard = ({ id, brand, image, skus }: IProduct) => {
   };
 
   return (
-    <figure onClick={handleProductClick} className="product-card">
+    <figure
+      data-testid={"product-card-test"}
+      onClick={handleProductClick}
+      className="product-card"
+    >
       <p className="brand-text brand-title">{brand}</p>
       <img src={image} alt={brand} />
       <div className="price-container">
         <p className="brand-text">{initialPrice}</p>
-        <Button onClick={handleAdd} variant="primary" className="plus-button">
+        <Button
+          data-testid={"add-product-button"}
+          onClick={handleAdd}
+          variant="primary"
+          className="plus-button"
+        >
           <BsPlus size={30} />
         </Button>
       </div>

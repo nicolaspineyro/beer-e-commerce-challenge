@@ -8,8 +8,6 @@ export interface IProduct {
   origin: string;
   information: string;
   skus: ISku[];
-  onAddPressed: () => void;
-  price: string;
 }
 
 export interface ISku {

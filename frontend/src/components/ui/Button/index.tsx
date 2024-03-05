@@ -1,7 +1,8 @@
 import ButtonProps from "src/utils/interfaces/ButtonProps";
 
 const Button = (props: ButtonProps) => {
-  const { disabled, onClick, onFocus, variant, children , className} = props;
+  const { disabled, onClick, onFocus, variant, children, className, ...rest } =
+    props;
 
   const buttonClass = `button ${
     disabled ? "button-disabled" : "button-enabled"
@@ -13,6 +14,7 @@ const Button = (props: ButtonProps) => {
       disabled={disabled}
       onClick={onClick}
       onFocus={onFocus}
+      {...rest}
     >
       {children}
     </button>

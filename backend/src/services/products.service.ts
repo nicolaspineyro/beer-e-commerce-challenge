@@ -2,14 +2,10 @@ import Products from "../database/products";
 import StockPrice from "../database/stock-price";
 
 export const getAll = () => {
-  console.log("service.getAll");
-
   return Products;
 };
 
 export const getByIdBrand = (id: string, brand: string) => {
-  console.log("service.getByIdBrand");
-
   return Products.find(
     (p) =>
       id === p.id.toString() &&
@@ -18,8 +14,6 @@ export const getByIdBrand = (id: string, brand: string) => {
 };
 
 export const getStockPriceBySku = (skuCode: string) => {
-  console.log("service.getStockPriceBySku");
-
   let found;
   Object.entries(StockPrice).forEach((prop) => {
     if (prop[0] == skuCode) {
@@ -31,7 +25,6 @@ export const getStockPriceBySku = (skuCode: string) => {
 };
 
 export const updateBySku = (skuCode: string, stock: number, price: number) => {
-  console.log("service.updateBySku");
   Object.entries(StockPrice).forEach((prop) => {
     if (prop[0] == skuCode) {
       stock && (prop[1].stock = stock);

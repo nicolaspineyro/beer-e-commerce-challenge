@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 import { MenuItemProps } from "src/utils/interfaces";
 
 const NavBarItem = ({ label, id, link }: MenuItemProps) => {

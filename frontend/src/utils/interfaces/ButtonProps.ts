@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 
-interface ButtonProps {
+interface ButtonProps extends React.ButtonHTMLAttributes<any> {
   disabled?: boolean;
   variant: "primary" | "secondary" | "chip";
   onClick?: React.MouseEventHandler<HTMLButtonElement>;

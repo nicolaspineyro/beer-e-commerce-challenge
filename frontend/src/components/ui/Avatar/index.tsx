@@ -17,7 +17,7 @@ const Avatar = ({
       {imageUrl && shape !== "string" ? (
         <img src={imageUrl} alt={altText} />
       ) : (
-        <figcaption>{children}</figcaption>
+        <figcaption data-testid="avatar-children">{children}</figcaption>
       )}
     </figure>
   );
