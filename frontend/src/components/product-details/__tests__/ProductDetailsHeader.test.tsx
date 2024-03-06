@@ -1,5 +1,5 @@
 import { render } from "@testing-library/react";
-import ProductDetailsHeader from "../components/product-details/ProductDetailsHeader";
+import ProductDetailsHeader from "../ProductDetailsHeader";
 import "@testing-library/jest-dom";
 
 const mockProduct = {

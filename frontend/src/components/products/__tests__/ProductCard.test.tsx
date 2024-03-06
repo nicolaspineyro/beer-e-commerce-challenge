@@ -1,7 +1,7 @@
 import { render, fireEvent } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import "@testing-library/jest-dom";
-import ProductCard from "../components/products/ProductCard";
+import ProductCard from "../ProductCard";
 
 const mockedUsedNavigate = jest.fn();
 

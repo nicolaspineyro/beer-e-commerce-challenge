@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import Avatar from "../components/ui/Avatar";
+import Avatar from "../";
 
 describe("Avatar component", () => {
   const mockImageUrl = "https://example.com/avatar.jpg";

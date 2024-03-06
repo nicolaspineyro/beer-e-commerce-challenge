@@ -14,24 +14,9 @@ const initialState = {
   cart: null,
 };
 
-const useCartStore: UseBoundStore<StoreApi<ICartStore>> = create((set) => ({
+const useCartStore: UseBoundStore<StoreApi<ICartStore>> = create(() => ({
   cart: initialState.cart,
-  addProductToCart: (product: IProduct) => {
-    const setProducts = (state: ICartStore) => {
-      let existingItems = state.cart?.items;
-      existingItems?.forEach((cartItem, index) => {
-        if (product.id === cartItem.product.id && existingItems) {
-          existingItems[index].quantity++;
-          existingItems[index].subTotal =
-            existingItems[index].quantity * product.price;
-        }
-      });
-      return {
-        ...state,
-      };
-    };
-    set(setProducts);
-  },
+  addProductToCart: () => {},
   removeProductFromCart: () => {},
 }));
 

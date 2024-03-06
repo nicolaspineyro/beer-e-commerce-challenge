@@ -1,6 +1,6 @@
 import { render, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import SearchInput from "../components/ui/SearchInput";
+import SearchInput from "..";
 
 describe("SearchInput Component", () => {
   test("renders the component", () => {

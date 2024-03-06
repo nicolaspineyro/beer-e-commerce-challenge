@@ -1,7 +1,7 @@
 import { render } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import "@testing-library/jest-dom";
-import NavBarItem from "../components/ui/NavBars/RootNavBar/NavBarItem";
+import NavBarItem from "../RootNavBar/NavBarItem";
 
 describe("NavBarItem component", () => {
   const mockMenuItem = {
